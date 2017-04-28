@@ -8,16 +8,16 @@ val app = new JFXApp {
         title = "First GUI"
 		scene= new Scene(400,600){
 			val button = new Button("Remove")
-			button.layoutX=100
 			button.layoutX=50
+			button.layoutY=50
 			
 			val combo = new ComboBox(List("Oracle","Enlightiks","Infa"))
-			combo.layoutX = 200
-			combo.layoutY = 200
+			combo.layoutX = 50
+			combo.layoutY = 100
 			
 			val lstView = new ListView(List("Oracle","Enlightiks","Infa"))
-			lstView.layoutX = 200
-			lstView.layoutY = 400
+			lstView.layoutX = 50
+			lstView.layoutY = 150
 			lstView.prefHeight = 150
 			
 			button.onAction = (e:ActionEvent) => {
